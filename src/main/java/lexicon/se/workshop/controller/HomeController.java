@@ -23,13 +23,13 @@ public class HomeController {
 
         model.addAttribute("serverTime", LocalDateTime.now());
 
-        String tableName = "test";
-        int price = 300;
+        String firstName = "Adam";
+        String lastName = "Larsson";
         LocalDate date = LocalDate.now();
 
 
-        model.addAttribute("tableName", tableName);
-        model.addAttribute("price", price);
+        model.addAttribute("firstName", firstName);
+        model.addAttribute("lastName", lastName);
         model.addAttribute("d", date);
 
         return "home";

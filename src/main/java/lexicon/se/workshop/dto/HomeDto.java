@@ -2,8 +2,8 @@ package lexicon.se.workshop.dto;
 
 public class HomeDto {
     private int id;
-    private String name;
-    private int price;
+    private String firstName;
+    private String lastName;
 
     public HomeDto() {
     }
@@ -16,28 +16,28 @@ public class HomeDto {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public int getPrice() {
-        return price;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setPrice(int price) {
-        this.price = price;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     @Override
     public String toString() {
         return "HomeDto{" +
                 "id=" + id +
-                ", name='" + name + '\'' +
-                ", price=" + price +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
                 '}';
     }
 }

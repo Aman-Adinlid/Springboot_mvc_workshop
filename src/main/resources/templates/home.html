@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <meta charset="UTF-8">
@@ -16,7 +16,19 @@
     <p>
         <span th:text="${msg}"></span>
     </p>
+    <p>
+        ServerTime: <span th:text="${serverTime}"></span>
+    </p>
 
+    <p>
+        firstName: <span th:text="${#strings.capitalize(firstName)}"></span>
+    </p>
+    <p>
+        lastName: <span th:text="${#strings.capitalize(lastName)}"></span>
+    </p>
+    <p>
+        Date: <span th:text="${#temporals.format(d, 'dd-MM-yyyy')}"></span>
+    </p>
 </div>
 <footer th:insert="fragments/footer :: footer_fragment"></footer>
 
