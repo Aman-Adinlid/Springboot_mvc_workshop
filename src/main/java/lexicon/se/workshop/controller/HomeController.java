@@ -17,10 +17,9 @@ public class HomeController {
         return "index";
     }
 
-    @GetMapping("/demo")
+    @GetMapping("/home")
     public String demo(Model model) {
-        String welcomeMessage = "Welcome to my first web app";
-        model.addAttribute("welcomeMessage", welcomeMessage);
+        model.addAttribute("msg", "Welcome to my first web app");
 
         model.addAttribute("serverTime", LocalDateTime.now());
 
@@ -33,7 +32,7 @@ public class HomeController {
         model.addAttribute("price", price);
         model.addAttribute("d", date);
 
-        return "demo";
+        return "home";
     }
 }
 
