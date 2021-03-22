@@ -23,9 +23,11 @@
     <p>
         firstName: <span th:text="${#strings.capitalize(firstName)}"></span>
     </p>
+
     <p>
         lastName: <span th:text="${#strings.capitalize(lastName)}"></span>
     </p>
+
     <p>
         Date: <span th:text="${#temporals.format(d, 'dd-MM-yyyy')}"></span>
     </p>
